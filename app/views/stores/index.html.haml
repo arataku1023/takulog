@@ -7,7 +7,8 @@
       %nav
         %ul.main-nav
           %li
-            %a{:href => "news.html"} News
+            = link_to new_store_path do
+              新規投稿
           %li
             = link_to stores_path do
               Menu
@@ -26,7 +27,7 @@
   .wrapper.grid
     .item
       %img{:art => "", :src => "../assets/image-1.jpg"}/
-      %p 店名店名店名
+      %p @stores.name
     .item
       %img{:art => "", :src => "../assets/image-3.jpg"}/
       %p 店名店名店名
