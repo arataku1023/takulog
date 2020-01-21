@@ -22,39 +22,20 @@
       %p
         体に優しい自然食を提供する、WCB CAFE。無添加の食材を利用したメニューが特徴です。
         美味しいブレンドコーヒーとヘルシーなオーガニックフードで体の内側から癒されてください。
+
   / /#menu
   .wrapper.grid
     - @stores.each do |store|
       .item
-        %img{:art => "", :src => "../assets/image-1.jpg"}/
+        - if store.image?
+          = image_tag store.image.url
+
         %p
           = store.name
-    -# .item
-    -#   %img{:art => "", :src => "../assets/image-3.jpg"}/
-    -#   %p 店名店名店名
-    -# .item
-    -#   %img{:art => "", :src => "../assets/image-4.jpg"}/
-    -#   %p 店名店名店名
-    -# .item
-    -#   %img{:art => "", :src => "../assets/image-10.jpg"}/
-    -#   %p 店名店名店名
-    -# .item
-    -#   %img{:art => "", :src => "../assets/image-6.jpg"}/
-    -#   %p 店名店名店名
-    -# .item
-    -#   %img{:art => "", :src => "../assets/image-7.jpg"}/
-    -#   %p 店名店名店名
-    -# .item
-    -#   %img{:art => "", :src => "../assets/image-8.jpg"}/
-    -#   %p 店名店名店名
-    -# .item
-    -#   %img{:art => "", :src => "../assets/image-9.jpg"}/
-    -#   %p 店名店名店名
-    -# .item
-    -#   %img{:art => "", :src => "../assets/image-2.jpg"}/
-    -#   %p 店名店名店名
+
   / /.grid
   %footer
     .wrapper
       %p
         %small © 2020 takulog
+
