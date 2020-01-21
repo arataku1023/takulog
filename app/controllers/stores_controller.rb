@@ -1,6 +1,6 @@
 class StoresController < ApplicationController
   def index
-    @stores = Store.includes(:user).order("created_at desc")
+    @stores = Store.includes(:user).order("created_at desc").page(params[:page]).per(9)
   end
 
   def new
