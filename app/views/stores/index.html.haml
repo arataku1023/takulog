@@ -15,8 +15,7 @@
           %li
             - if user_signed_in?
               = link_to "signout", destroy_user_session_path, method: :delete, class: "signout-btn"
-            - else
-              = ""
+
 
     .menu-content.wrapper
       %h2.page-title Menu
@@ -25,33 +24,35 @@
         美味しいブレンドコーヒーとヘルシーなオーガニックフードで体の内側から癒されてください。
   / /#menu
   .wrapper.grid
-    .item
-      %img{:art => "", :src => "../assets/image-1.jpg"}/
-      %p @stores.name
-    .item
-      %img{:art => "", :src => "../assets/image-3.jpg"}/
-      %p 店名店名店名
-    .item
-      %img{:art => "", :src => "../assets/image-4.jpg"}/
-      %p 店名店名店名
-    .item
-      %img{:art => "", :src => "../assets/image-10.jpg"}/
-      %p 店名店名店名
-    .item
-      %img{:art => "", :src => "../assets/image-6.jpg"}/
-      %p 店名店名店名
-    .item
-      %img{:art => "", :src => "../assets/image-7.jpg"}/
-      %p 店名店名店名
-    .item
-      %img{:art => "", :src => "../assets/image-8.jpg"}/
-      %p 店名店名店名
-    .item
-      %img{:art => "", :src => "../assets/image-9.jpg"}/
-      %p 店名店名店名
-    .item
-      %img{:art => "", :src => "../assets/image-2.jpg"}/
-      %p 店名店名店名
+    - @stores.each do |store|
+      .item
+        %img{:art => "", :src => "../assets/image-1.jpg"}/
+        %p
+          = store.name
+    -# .item
+    -#   %img{:art => "", :src => "../assets/image-3.jpg"}/
+    -#   %p 店名店名店名
+    -# .item
+    -#   %img{:art => "", :src => "../assets/image-4.jpg"}/
+    -#   %p 店名店名店名
+    -# .item
+    -#   %img{:art => "", :src => "../assets/image-10.jpg"}/
+    -#   %p 店名店名店名
+    -# .item
+    -#   %img{:art => "", :src => "../assets/image-6.jpg"}/
+    -#   %p 店名店名店名
+    -# .item
+    -#   %img{:art => "", :src => "../assets/image-7.jpg"}/
+    -#   %p 店名店名店名
+    -# .item
+    -#   %img{:art => "", :src => "../assets/image-8.jpg"}/
+    -#   %p 店名店名店名
+    -# .item
+    -#   %img{:art => "", :src => "../assets/image-9.jpg"}/
+    -#   %p 店名店名店名
+    -# .item
+    -#   %img{:art => "", :src => "../assets/image-2.jpg"}/
+    -#   %p 店名店名店名
   / /.grid
   %footer
     .wrapper
