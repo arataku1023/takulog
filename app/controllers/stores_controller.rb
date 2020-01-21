@@ -12,6 +12,9 @@ class StoresController < ApplicationController
     redirect_to stores_path
   end
 
+  def show
+  end
+
   private
   def stores_params
     params.require(:store).permit(:name, :address, :text, :image)
