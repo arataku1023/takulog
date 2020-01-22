@@ -4,13 +4,16 @@
       %h1
         = link_to root_path do
           %img.logo{:alt => "WCBカフェホーム", :src => "/assets/icon.takulog3.png"}/
-      -# %nav
-      -#   %ul.main-nav
-      -#     %li
-      -#       %a{:href => "news.html"} News
-      -#     %li
-      -#       = link_to stores_index_path do
-      -#         Menu
+      %nav
+        %ul.main-nav
+          %li
+            - if user_signed_in?
+              = link_to new_store_path do
+                新規投稿
+            %li
+              = link_to stores_path do
+                Menu
+
     .home-content.wrapper
       %h2.page-title Welcome to your record
       %p あなたによる、あなただけのグルメまとめ。信じるは自分の味覚のみ。
