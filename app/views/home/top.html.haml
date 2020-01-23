@@ -10,7 +10,8 @@
             - if user_signed_in?
               = link_to new_store_path do
                 新規投稿
-            %li
+          %li
+            - if user_signed_in?
               = link_to stores_path do
                 Menu
 
