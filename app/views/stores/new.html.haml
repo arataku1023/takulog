@@ -1,18 +1,35 @@
 .contents.row
-  .container
-    = form_for @stores do |form|
-      %h3
-        投稿する
-      %p
-        = form.text_field :name, placeholder: "Storename"
-      %p
-        = form.text_field :address, placeholder: "Address"
-      %p
-        = form.label "画像をアップロード"
-        %br/
-        = form.file_field :image
+  %header.page-header.wrapper
+    %h1
+      = link_to root_path do
+        %img.logo{:alt => "WCBカフェホーム", :src => "/assets/icon.takulog3.png"}/
+    %nav
+      %ul.main-nav
+        %li
+          = link_to new_store_path do
+            新規投稿
+        %li
+          = link_to stores_path do
+            Menu
+        %li
+          - if user_signed_in?
+            = link_to "signout", destroy_user_session_path, method: :delete, class: "signout-btn"
 
-      %p
-        = form.text_area :text, placeholder: "text", size:30, rows: "10"
-      %p
-        = form.submit "SEND"
+    .container
+
+      = form_for @stores do |form|
+        %h3
+          投稿する
+        %p
+          = form.text_field :name, placeholder: "Storename"
+        %p
+          = form.text_field :address, placeholder: "Address"
+        %p
+          = form.label "画像をアップロード"
+          %br/
+          = form.file_field :image
+
+        %p
+          = form.text_area :text, placeholder: "text", size:30, rows: "10"
+        %p
+          = form.submit "SEND"
