@@ -100,7 +100,7 @@ img {
   background-repeat: no-repeat;
 }
 #home {
-  background-image: url(../assets/main-image.jpg);
+  background-image: url(/public/assets/main-image.jpg);
   background-color: #0bd;
   background-blend-mode: hard-light;
   min-height: 100vh;
@@ -111,7 +111,7 @@ img {
 /* NEWS
 ---------------------- */
 #news {
-  background-image: url(../assets/image-5.jpg);
+  background-image: url(/public/assets/image-5.jpg);
   height: 270px;
   margin-bottom: 40px;
   .page-title {
@@ -228,7 +228,7 @@ aside {
 /* MENU
 ------------------------ */
 #menu {
-  background-image: url(../assets/image-13.jpg);
+  background-image: url(/public/assets/image-13.jpg);
   min-height: 100vh;
 }
 .menu-content {
@@ -259,7 +259,7 @@ aside {
 .row {
   height: 100vh;
   position: relative;
-  background-image: url(../assets/975FOJMNYA.jpeg);
+  background-image: url(/public/assets/975FOJMNYA.jpeg);
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: right 10%;
@@ -277,7 +277,7 @@ aside {
 .row {
   height: 100vh;
   position: relative;
-  background-image: url(../assets/975FOJMNYA.jpeg);
+  background-image: url(/public/assets/975FOJMNYA.jpeg);
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: right 10%;
