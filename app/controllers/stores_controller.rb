@@ -1,6 +1,6 @@
 class StoresController < ApplicationController
   def index
-    @stores = Store.includes(:user).order("created_at desc").page(params[:page]).per(9)
+    @stores = Store.where(user_id: current_user.id).order("created_at desc").page(params[:page]).per(9)
   end
 
   def new
@@ -18,7 +18,7 @@ class StoresController < ApplicationController
 
   private
   def stores_params
-    params.require(:store).permit(:name, :address, :text, :image)
+    params.require(:store).permit(:name, :address, :text, :image).merge(user_id: current_user.id)
   end
 
 end
