@@ -111,7 +111,7 @@ img {
 /* NEWS
 ---------------------- */
 #news {
-  background-image: url(../images/image-5.jpg);
+  background-image: url(../assets/image-5.jpg);
   height: 270px;
   margin-bottom: 40px;
   .page-title {
@@ -132,6 +132,7 @@ footer {
 /* 記事部分 */
 article {
   width: 74%;
+  margin-left: 230px;
 }
 /* サイドバー */
 aside {
@@ -176,6 +177,7 @@ aside {
 }
 .post-cat {
   margin-left: 120px;
+  font-size: 1rem;
 }
 article {
   img {
