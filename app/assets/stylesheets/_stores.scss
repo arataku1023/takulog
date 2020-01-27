@@ -253,3 +253,21 @@ aside {
   width: 346px;
   height: 231px;
 }
+
+// ログインフォーム
+// -------------------------
+.row {
+  height: 100vh;
+  position: relative;
+  background-image: url(../assets/975FOJMNYA.jpeg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: right 10%;
+
+
+  .container {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+  }
+}
