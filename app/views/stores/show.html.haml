@@ -1,36 +1,12 @@
-%body
-  #news.big-bg
-    %header.page-header.wrapper
-      %h1
-        = link_to root_path do
-          %img.logo{:alt => "WCBカフェホーム", :src => "/assets/icon.takulog3.png"}/
-      %nav
-        %ul.main-nav
-          %li
-            = link_to new_store_path do
-              新規投稿
-          %li
-            = link_to stores_path do
-              Menu
-          %li
-            - if user_signed_in?
-              = link_to "signout", destroy_user_session_path, method: :delete, class: "signout-btn"
-    .wrapper
-      %h2.page-title Details
-    / /.wrapper
-  / /#home
-  .news-contents.wrapper
-    %article
-      %header.post-info
-        %h2.post-title 
-          = @stores.name
-        %p.post-cat 
-          = @stores.address
-      %img{:alt => "店内の様子", :src => @stores.image}/
-      
-      %p
-        = @stores.text
-  %footer
-    .wrapper
-      %p
-        %small © 2020 takulog
+view大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌い
+view大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌い
+view大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌い
+view大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌い
+view大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌い
+view大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌い
+view大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌い%vview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌い
+view大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌い
+view大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌い
+view大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌い
+view大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌い%vview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌い
+view大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌いview大嫌い

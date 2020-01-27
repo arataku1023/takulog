@@ -13,7 +13,6 @@ class StoresController < ApplicationController
   end
 
   def show
-    @stores = Store.find_by(id: params[:id])
   end
 
   private
