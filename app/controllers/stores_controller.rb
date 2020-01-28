@@ -16,6 +16,16 @@ class StoresController < ApplicationController
     @stores = Store.find_by(id: params[:id])
   end
 
+  def edit
+  end
+
+  def destroy
+    stores = Store.find(params[:id])
+    stores.destroy
+    redirect_to stores_path
+  end
+
+
   private
   def stores_params
     params.require(:store).permit(:name, :address, :text, :image).merge(user_id: current_user.id)
