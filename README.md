@@ -1,24 +1,10 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Takulogってどんなアプリ？
+アプリ名は完成前に変更します。(某グルメサイトと名前が酷似しているため)
 
-Things you may want to cover:
+## なぜこのアプリを作ったの？
 
-* Ruby version
+## 実装済み機能
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## これから実装予定機能

@@ -29,10 +29,9 @@
           = @stores.name
         %p.post-cat 
           = @stores.address
-      %img{:alt => "店内の様子", :src => @stores.image}/
-      
-      %p
-        = @stores.text
+      = image_tag @stores.image, size: '655x400'
+      %p.text
+        = simple_format(@stores.text)
   %footer
     .wrapper
       %p
