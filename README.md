@@ -20,6 +20,8 @@
 ![user](https://user-images.githubusercontent.com/59153438/74930399-d8ba5c00-5420-11ea-986d-6f1eab584f1b.gif)
 
 店舗情報(店名、住所、コメント、画像)の投稿、保存機能<br>
+![create](https://user-images.githubusercontent.com/59153438/75319595-52829780-58b0-11ea-89bb-81ad96c0c14a.gif)
+
 店舗情報の詳細表示、編集、削除機能<br>
 ![edit](https://user-images.githubusercontent.com/59153438/75319254-a6d94780-58af-11ea-89a3-e76913a275e1.gif)
 
