@@ -21,7 +21,7 @@
 
 店舗情報(店名、住所、コメント、画像)の投稿、保存機能<br>
 店舗情報の詳細表示、編集、削除機能<br>
-![edit](https://user-images.githubusercontent.com/59153438/75223218-53042b00-57e9-11ea-9456-472fdc565c9f.gif)
+![edit](https://user-images.githubusercontent.com/59153438/75319254-a6d94780-58af-11ea-89a3-e76913a275e1.gif)
 
 9投稿以上でページが分かれるページネーション機能<br>
 
