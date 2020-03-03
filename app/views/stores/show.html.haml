@@ -11,10 +11,10 @@
           %li
             = link_to "Menu", stores_path 
           %li
-            - if user_signed_in? && current_user.id == @stores.user_id
-              = link_to "編集", edit_store_path(@stores.id)
+            - if user_signed_in? && current_user.id == @store.user_id
+              = link_to "編集", edit_store_path(@store.id)
             %li
-              = link_to "削除", store_path(@stores.id), method: :delete
+              = link_to "削除", store_path, method: :delete
           %li
             - if user_signed_in?
               = link_to "signout", destroy_user_session_path, method: :delete, class: "signout-btn"
@@ -26,12 +26,12 @@
     %article
       %header.post-info
         %h2.post-title 
-          = @stores.name
+          = @store.name
         %p.post-cat 
-          = @stores.address
-      = image_tag @stores.image, size: '655x400'
+          = @store.address
+      = image_tag @store.image.url size: '655x400'
       %p.text
-        = simple_format(@stores.text)
+        = simple_format(@store.text)
   %footer
     .wrapper
       %p
