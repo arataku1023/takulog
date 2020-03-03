@@ -17,7 +17,7 @@
 
     .container
 
-      = form_for @stores do |form|
+      = form_for @store do |form|
         %h3
           投稿する
         %p
@@ -28,7 +28,6 @@
           = form.label "画像をアップロード"
           %br/
           = form.file_field :image
-
         %p
           = form.text_area :text, placeholder: "text", size:30, rows: "10"
         %p
