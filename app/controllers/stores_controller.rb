@@ -22,12 +22,10 @@ class StoresController < ApplicationController
 
   def destroy
     @store = Store.find(params[:id])
-    if @store.destroy
+    @store.destroy
     
-      redirect_to stores_path
-    else
-      redirect_to root_path
-    end
+    redirect_to stores_path
+    
   end
 
   def update
