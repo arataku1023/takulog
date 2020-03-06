@@ -27,7 +27,8 @@
         %p
           = form.label "画像をアップロード"
           %br/
-          = form.file_field :image
+          = form.file_field :image, accept: "image/*", id: "store_image"
+        %img#preview/
         %p
           = form.text_area :text, placeholder: "text", size:30, rows: "10"
         %p
