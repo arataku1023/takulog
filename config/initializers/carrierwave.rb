@@ -3,7 +3,9 @@ require 'carrierwave/storage/file'
 require 'carrierwave/storage/fog'
 
 CarrierWave.configure do |config|
-  if Rails.env.production?
+  if Rails.env.development? || Rails.env.test?   #開発とテストは今まで通りに
+    config.storage = file
+  elsif Rails.env.production?
     config.storage = :fog
     config.fog_provider = 'fog/aws'
     config.fog_credentials = {
@@ -12,7 +14,7 @@ CarrierWave.configure do |config|
       aws_secret_access_key: Rails.application.credentials.aws[:secret_access_key],
       region: 'ap-northeast-1'
     }
-    config.fog_directory  = 'takulog'
-    config.asset_host = 'https://s3-ap-northeast-1.amazonaws.com/takulog'
+  config.fog_directory  = 'takulog'
+  config.asset_host = 'https://s3-ap-northeast-1.amazonaws.com/takulog'
   end
 end
