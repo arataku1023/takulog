@@ -34,6 +34,10 @@ class StoresController < ApplicationController
     redirect_to stores_path
   end
 
+  def search
+    @store = Store.search(params[:keyword])
+  end
+
   private
   def stores_params
     params.require(:store).permit(:name, :address, :text, :image).merge(user_id: current_user.id)
